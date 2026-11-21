@@ -1,63 +1,469 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Nexus Digital — сайты, боты и автоматизация бизнеса</title>
-<meta name="description" content="Nexus Digital: разработка сайтов, Telegram-ботов, интеграций и ИИ-автоматизации для бизнеса.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f6ff">
+<meta name="description" content="Nexus Digital — продающие сайты, Telegram- и MAX-боты, ИИ-помощники и автоматизация процессов для бизнеса.">
+<meta property="og:title" content="Nexus Digital — сайты, боты и автоматизация для бизнеса">
+<meta property="og:description" content="Создаём сильный первый контакт с клиентом: продающие сайты, боты, автоматизация и ИИ-решения.">
+<title>Nexus Digital — сайты, боты и автоматизация, которые помогают продавать</title>
 <style>
-
-:root{color-scheme:dark;--bg:#0a0c14;--card:#121625;--line:#2b3146;--txt:#f4f5ff;--muted:#b2bbd3;--a:#89efdd;--b:#b69aff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.65 system-ui,-apple-system,Segoe UI,sans-serif}a{color:inherit;text-decoration:none}
-a:focus-visible{outline:2px solid var(--a);outline-offset:5px}section[id]{scroll-margin-top:24px}.wrap{width:min(1160px,calc(100% - 40px));margin-inline:auto}
-.nav{display:flex;justify-content:space-between;align-items:center;gap:22px;padding-block:23px;border-bottom:1px solid var(--line)}.logo{font-size:19px;letter-spacing:.08em;font-weight:850;white-space:nowrap}.logo span,.accent{color:var(--a)}
-nav{display:flex;gap:22px;flex-wrap:wrap}nav a{font-size:14px;color:var(--muted)}nav a:hover{color:var(--a)}
-.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(26px,6vw,76px);align-items:center;padding-block:clamp(52px,9vw,114px)}
-.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--a)}
-h1,h2,h3{line-height:1.12}h1{font-size:clamp(38px,5.9vw,76px);letter-spacing:-.065em;margin:16px 0 22px}h2{font-size:clamp(30px,4.2vw,52px);letter-spacing:-.05em;margin:0 0 14px}h3{letter-spacing:-.025em}
-.lead,.sub,.card p,.contact p{color:var(--muted)}.lead{max-width:50ch;font-size:clamp(16px,2vw,20px)}.sub{max-width:65ch;margin:0 0 28px}
-.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.btn{min-height:46px;display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:10px 17px;border-radius:10px;font-weight:740;font-size:14px;border:1px solid transparent;transition:transform .18s ease,background-color .18s ease}.btn:hover{transform:translateY(-2px)}.primary{background:var(--a);color:#102420}.secondary{border-color:#49516a;background:#ffffff07}.secondary:hover{background:#ffffff13}
-.preview{margin:0;padding:clamp(17px,3vw,28px);border-radius:24px;border:1px solid #54517d;background:radial-gradient(ellipse at top right,#332956,transparent 72%),#151a2b;box-shadow:0 22px 65px #0005}.preview figcaption{display:flex;gap:12px;align-items:center;padding-bottom:18px;border-bottom:1px solid #ffffff24;font-weight:780}.preview figcaption span{color:var(--b);font-size:12px;font-weight:700}.bubble{padding:10px 14px;border-radius:14px 14px 14px 4px;background:#282e46;width:fit-content;max-width:94%;margin:14px 0 0;font-size:14px}.bubble.sent{margin-left:auto;background:#21423f;border-radius:14px 14px 4px 14px}.bubble.confirmed{color:var(--a)}.preview-link{display:inline-block;margin-top:18px;color:var(--a);font-size:14px;font-weight:700}
-section{padding-block:clamp(40px,7vw,82px);border-top:1px solid var(--line)}.grid,.work{display:grid;gap:14px;grid-template-columns:repeat(3,minmax(0,1fr))}.work{grid-template-columns:repeat(4,minmax(0,1fr))}.card{padding:24px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#191e30,var(--card))}.card h3{font-size:20px;margin:14px 0 9px}.card p{margin:0;font-size:15px}.symbol{width:44px;height:44px;display:grid;place-items:center;border-radius:11px;background:#ffffff0b;font-size:24px}.tag{color:var(--b);font-size:13px;font-weight:750}#cases .card{border-color:#48446a}
-.contact{padding:clamp(20px,5vw,56px);border:1px solid #4b5076;border-radius:23px;background:linear-gradient(120deg,#183139,#271e40)}.contact h2{margin-top:12px}.mail{color:var(--a);overflow-wrap:anywhere;font-weight:750}footer{border-top:1px solid var(--line);padding-block:24px;color:var(--muted);font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
-@media(max-width:860px){.hero{grid-template-columns:1fr}.preview{max-width:570px}.grid,.work{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:540px){.wrap{width:calc(100% - 32px)}.nav{align-items:flex-start;flex-direction:column;gap:12px}nav{gap:8px 16px}.grid,.work{grid-template-columns:1fr}.card{padding:20px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Unbounded:wght@500;600;700;800&display=swap');
+:root{
+  --bg:#f8f6ff;
+  --surface:#ffffff;
+  --surface-2:#f1edff;
+  --text:#16151d;
+  --muted:#65697a;
+  --line:#e7e2f2;
+  --purple:#6a4dff;
+  --purple-2:#8e7bff;
+  --lime:#d8ff68;
+  --orange:#ffb36b;
+  --shadow:0 24px 60px rgba(34,24,74,.12);
+  --radius:26px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(circle at top right,#ece7ff 0,#f8f6ff 32%,#fff 100%);color:var(--text);font:16px/1.65 Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+h1,h2,h3,p{margin:0}
+h1,h2,.brand{font-family:Unbounded,Inter,sans-serif;letter-spacing:-.045em}
+h1{font-size:clamp(40px,6vw,86px);line-height:1.03}
+h2{font-size:clamp(30px,4vw,54px);line-height:1.06}
+h3{font-size:22px;line-height:1.22}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.topbar{padding:11px 0;background:#1a1824;color:#fff;text-align:center;font-size:13px}
+.topbar strong{color:var(--lime)}
+.header{position:sticky;top:0;z-index:30;background:rgba(248,246,255,.86);backdrop-filter:blur(18px);border-bottom:1px solid rgba(231,226,242,.86)}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-size:18px;font-weight:800}
+.brand-mark{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--purple),#37298f);color:#fff;font-size:21px;box-shadow:0 12px 30px rgba(106,77,255,.28)}
+.navlinks{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:700}
+.navlinks a:not(.button):hover{color:var(--purple)}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:15px 22px;font-weight:800;border:2px solid transparent;transition:transform .2s ease, box-shadow .2s ease, background .2s ease}
+.button:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(90,66,214,.16)}
+.button.primary{background:linear-gradient(135deg,var(--purple),var(--purple-2));color:#fff}
+.button.secondary{background:#fff;border-color:#d8d0f3;color:var(--text)}
+.button.lime{background:var(--lime);color:#15151d}
+.button.outline-light{border-color:rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.08)}
+.button.small{padding:10px 16px;font-size:13px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:900;color:var(--purple)}
+.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--lime)}
+.hero{padding:78px 0 86px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:36px;align-items:center}
+.hero-copy p{max-width:630px;font-size:19px;color:#515568;margin-top:20px}
+.highlight{background:linear-gradient(transparent 56%, var(--lime) 56%)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 18px}
+.hero-points{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:700px;margin-top:26px}
+.hero-point{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:18px;padding:16px 18px;box-shadow:var(--shadow)}
+.hero-point strong{display:block;font-size:14px;margin-bottom:4px}
+.hero-point span{font-size:13px;color:var(--muted)}
+.hero-media{position:relative;min-height:580px}
+.hero-photo-card{position:absolute;inset:0 20px 34px 0;border-radius:34px;overflow:hidden;box-shadow:var(--shadow);background:#ddd}
+.hero-photo-card img{width:100%;height:100%;object-fit:cover}.hero-photo-card{background:linear-gradient(130deg,#aa9ffc,#c7f1ff 48%,#d8ff68)}
+.hero-photo-card:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(19,16,32,.25),rgba(106,77,255,.18) 45%,rgba(216,255,104,.08))}
+.hero-glass{position:absolute;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.95);box-shadow:0 18px 40px rgba(23,17,55,.15);border-radius:24px}
+.hero-card-a{left:-10px;top:42px;width:240px;padding:18px 18px 16px}
+.hero-card-b{right:0;bottom:0;width:275px;padding:20px}
+.hero-micro{font-size:12px;font-weight:800;color:var(--purple);text-transform:uppercase;letter-spacing:.1em}
+.hero-big{font:800 32px/1 Unbounded,Inter,sans-serif;margin:12px 0 8px}
+.hero-small{font-size:14px;color:#575c6d}
+.hero-list{margin-top:12px;display:grid;gap:10px}
+.hero-list div{padding:11px 13px;border-radius:14px;background:#fff;border:1px solid #ece7f8;font-size:13px;font-weight:700}
+.strip{padding:0 0 18px}
+.strip-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.strip-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px 18px 17px;box-shadow:0 10px 28px rgba(62,38,133,.07)}
+.strip-card strong{display:block;margin-bottom:7px;font-size:15px}
+.strip-card span{font-size:14px;color:var(--muted)}
+.section{padding:96px 0}
+.section-heading{max-width:820px;margin-bottom:38px}
+.section-heading p{margin-top:16px;font-size:17px;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.service{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 16px 42px rgba(75,54,153,.08)}
+.service-media{height:215px;position:relative;overflow:hidden;background:linear-gradient(135deg,#dcd6ff,#b9e9fa)}
+.service-media img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.service:hover .service-media img{transform:scale(1.04)}
+.service-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,9,20,.05),rgba(10,9,20,.42))}
+.service-label{position:absolute;left:18px;bottom:16px;z-index:1;padding:9px 12px;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-radius:999px;font-size:12px;font-weight:800}
+.service-body{padding:26px 26px 28px}
+.service-num{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;font-size:12px;font-weight:900;background:#f0ebff;color:var(--purple);margin-bottom:15px}
+.service p{color:var(--muted);margin:10px 0 18px}
+.service a{font-weight:800;color:var(--purple)}
+.darkband{background:linear-gradient(135deg,#171521,#222031)}
+.darkband .section-heading p,.darkband .step p,.darkband .step li,.darkband .facts p{color:#c6c7d5}
+.darkband h2,.darkband h3,.darkband{color:#fff}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:28px;background:rgba(255,255,255,.03)}
+.step-num{font:800 52px/1 Unbounded,Inter,sans-serif;color:var(--lime);display:block;margin-bottom:18px}
+.step p{margin-top:12px}
+.results-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;align-items:start}
+.example-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.example{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 32px rgba(78,53,160,.08)}
+.example-media{height:220px;position:relative;background:linear-gradient(135deg,#dcd6ff,#b9e9fa)}
+.example-media img{width:100%;height:100%;object-fit:cover}
+.example-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,21,42,.02),rgba(25,21,42,.58))}
+.example-tag{position:absolute;left:16px;bottom:16px;z-index:1;background:rgba(255,255,255,.9);border-radius:999px;padding:9px 12px;font-size:12px;font-weight:800}
+.example-copy{padding:22px}
+.example-copy p{margin-top:10px;color:var(--muted)}
+.facts{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 18px 42px rgba(78,53,160,.08)}
+.facts-list{display:grid;gap:14px;margin-top:18px}
+.fact{display:grid;grid-template-columns:42px 1fr;gap:14px;align-items:flex-start}
+.fact-icon{width:42px;height:42px;border-radius:14px;background:#f0ebff;display:grid;place-items:center;font-size:18px}
+.fact strong{display:block;margin-bottom:5px}
+.fact p{font-size:14px;color:var(--muted)}
+.faq{display:grid;grid-template-columns:.82fr 1.18fr;gap:52px;align-items:start}
+.faq-panel{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;box-shadow:0 18px 42px rgba(78,53,160,.08)}
+.faq details{border-bottom:1px solid #e9e4f4;padding:18px 0}
+.faq details:last-child{border-bottom:0;padding-bottom:0}
+.faq summary{list-style:none;cursor:pointer;font-weight:800;position:relative;padding-right:32px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:'+';position:absolute;right:0;top:-2px;font-size:24px;color:var(--purple)}
+.faq details[open] summary:after{content:'−'}
+.faq details p{margin-top:10px;color:var(--muted)}
+.cta{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--purple),#4330b4);color:#fff;border-radius:34px;padding:54px;display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center;box-shadow:0 24px 60px rgba(74,50,177,.28)}
+.cta:after{content:"";position:absolute;right:-80px;top:-90px;width:330px;height:330px;border-radius:50%;background:rgba(255,255,255,.08)}
+.cta h2{margin-bottom:12px}
+.cta p{color:#ece8ff;max-width:640px}
+.cta-box{position:relative;z-index:1;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.2);border-radius:28px;padding:24px}
+.cta-box ul{padding-left:18px;margin:14px 0 0}
+.cta-box li{margin:7px 0;color:#f3efff}
+.cta-actions{display:grid;gap:12px;margin-top:18px}
+.footer{padding:42px 0 90px;color:var(--muted);font-size:13px}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.footer-links{display:flex;flex-wrap:wrap;gap:14px 22px}
+.sources{margin-top:16px;font-size:12px;line-height:1.6}
+.mobile-cta{display:none}
+:focus-visible{outline:3px solid #ff9a5e;outline-offset:3px}
+@media (max-width:1080px){
+  .hero-grid,.results-layout,.faq,.cta{grid-template-columns:1fr}
+  .hero-media{min-height:490px}
+  .hero-points,.strip-grid,.steps,.example-grid,.services{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .wrap{padding:0 18px}
+  .nav{min-height:72px}
+  .navlinks a:not(.button){display:none}
+  .navlinks .button{padding:10px 13px;font-size:12px}
+  .hero{padding:48px 0 58px}
+  .hero-copy p{font-size:17px}
+  .hero-points,.strip-grid,.steps,.example-grid,.services{grid-template-columns:1fr}
+  .hero-media{min-height:410px}
+  .hero-photo-card{inset:0 0 26px 0}
+  .hero-card-a{left:8px;top:18px;width:210px}
+  .hero-card-b{right:8px;left:auto;bottom:0;width:235px}
+  .section{padding:72px 0}
+  .section-heading p{font-size:16px}
+  .service-media,.example-media{height:190px}
+  .cta{padding:34px 22px;border-radius:24px}
+  .footer-top{flex-direction:column}
+  .footer{padding-bottom:108px}
+  .mobile-cta{display:block;position:fixed;bottom:0;left:0;right:0;z-index:35;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(248,246,255,.92);backdrop-filter:blur(16px);border-top:1px solid var(--line)}
+  .mobile-cta .button{width:100%}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.service-media img{transition:none}}
 </style>
 </head>
 <body>
-<header class="wrap nav"><a href="#top" class="logo">NEXUS<span> DIGITAL</span></a><nav><a href="#services">Услуги</a><a href="#cases">Кейс</a><a href="#approach">Подход</a><a href="#contact">Контакты</a></nav></header>
+<div class="topbar">Создаём digital-инструменты, которые помогают <strong>привлекать внимание и получать заявки</strong></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Nexus Digital — на главную"><span class="brand-mark">✳</span>NEXUS DIGITAL</a>
+    <nav class="navlinks" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#results">Решения</a>
+      <a href="#process">Как работаем</a>
+      <a href="#faq">FAQ</a>
+      <a class="button small primary" href="#contact">Обсудить проект ↗</a>
+    </nav>
+  </div>
+</header>
+
 <main id="top">
-<div class="wrap hero">
-  <div>
-    <div class="eyebrow">Nexus Digital · разработка для бизнеса</div>
-    <h1>Сайты и боты, которые <span class="accent">принимают заявки</span></h1>
-    <p class="lead">Создаём сайты, ботов в MAX и Telegram и связываем их с вашими рабочими сервисами. Помогаем автоматизировать запись и приём заявок.</p>
-    <div class="actions">
-      <a class="btn primary" href="https://max.ru/id503198822600_1_bot">Оставить заявку в MAX</a>
-      <a class="btn secondary" href="https://t.me/nexusdigitalbots">Написать в Telegram</a>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Сайты • Telegram/MAX-боты • ИИ • Автоматизация</span>
+        <h1>Сайт, бот и автоматизация, которые помогают <span class="highlight">продавать увереннее.</span></h1>
+        <p>Если ваш бизнес выглядит слабо в интернете, теряет заявки в переписке или тонет в рутине — это можно исправить. Nexus Digital создаёт яркие сайты, удобных ботов и понятные цифровые решения, которые усиливают первое впечатление и упрощают путь клиента к заказу.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#contact">Хочу сильный сайт ↗</a>
+          <a class="button secondary" href="#results">Посмотреть варианты решений ↓</a>
+        </div>
+        <div class="hero-points">
+          <div class="hero-point"><strong>Сильная подача</strong><span>Сайт выглядит современно и вызывает больше доверия.</span></div>
+          <div class="hero-point"><strong>Удобный путь к заявке</strong><span>Кнопки, структура и смысл ведут клиента к действию.</span></div>
+          <div class="hero-point"><strong>Меньше рутины</strong><span>Боты и автоматизация освобождают время для бизнеса.</span></div>
+        </div>
+      </div>
+      <div class="hero-media" aria-label="Фотография современного рабочего пространства и карточки преимуществ">
+        <div class="hero-photo-card">
+          <img src="images/developer.webp" alt="Иллюстрация: разработчик работает за ноутбуком">
+        </div>
+        <div class="hero-glass hero-card-a">
+          <div class="hero-micro">первое впечатление</div>
+          <div class="hero-big">WOW</div>
+          <div class="hero-small">Яркая подача, сильные акценты и понятные выгоды для клиента.</div>
+        </div>
+        <div class="hero-glass hero-card-b">
+          <div class="hero-micro">что получит бизнес</div>
+          <div class="hero-list">
+            <div>🌐 Продающий сайт с сильным первым экраном</div>
+            <div>💬 Бот для вопросов, заявок и каталога</div>
+            <div>⚙️ Автоматизация повторяющихся процессов</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="wrap strip-grid">
+      <div class="strip-card"><strong>Под вашу задачу</strong><span>Не навязываем лишнее — подбираем решение под конкретный бизнес.</span></div>
+      <div class="strip-card"><strong>С упором на доверие</strong><span>Дизайн, структура и тексты помогают клиенту захотеть написать вам.</span></div>
+      <div class="strip-card"><strong>Понятный запуск</strong><span>Сначала логика и план, потом реализация и проверка.</span></div>
+      <div class="strip-card"><strong>Для телефона тоже</strong><span>Сайт удобно смотреть с мобильного, а это критично для большинства клиентов.</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="section-heading">
+        <span class="eyebrow">Что мы делаем</span>
+        <h2>Не просто «разработка».<br>А инструменты, которые делают бизнес заметнее.</h2>
+        <p>Вместо скучного присутствия в интернете — понятный образ, удобное взаимодействие и цифровая система, которая помогает клиенту быстрее принять решение.</p>
+      </div>
+      <div class="services">
+        <article class="service">
+          <div class="service-media">
+            <img src="images/website.webp" alt="Иллюстрация: пример сайта на экране ноутбука">
+            <span class="service-label">Сайт, который хочется открыть ещё раз</span>
+          </div>
+          <div class="service-body">
+            <span class="service-num">01</span>
+            <h3>Продающие сайты и лендинги</h3>
+            <p>Яркий первый экран, цепляющая структура, акценты на выгодах и удобный путь к обращению. Подходит для услуг, магазинов, специалистов и digital-проектов.</p>
+            <a href="#contact">Мне нужен сайт ↗</a>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service-media">
+            <img src="images/chatbot.webp" alt="Иллюстрация: бот в мессенджере на смартфоне">
+            <span class="service-label">Общение с клиентом — быстрее и удобнее</span>
+          </div>
+          <div class="service-body">
+            <span class="service-num">02</span>
+            <h3>Telegram- и MAX-боты</h3>
+            <p>Боты могут принимать обращения, помогать с выбором услуги, показывать каталог, вести запись и отвечать на частые вопросы, когда вы заняты другими задачами.</p>
+            <a href="#contact">Хочу бота ↗</a>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service-media">
+            <img src="images/automation.webp" alt="Иллюстрация: команда обсуждает графики и автоматизацию">
+            <span class="service-label">Меньше ручных действий — больше порядка</span>
+          </div>
+          <div class="service-body">
+            <span class="service-num">03</span>
+            <h3>Автоматизация процессов</h3>
+            <p>Соединим сервисы, уберём лишние повторяющиеся действия и выстроим более понятный рабочий процесс там, где это действительно полезно.</p>
+            <a href="#contact">Хочу автоматизировать ↗</a>
+          </div>
+        </article>
+
+        <article class="service">
+          <div class="service-media">
+            <img src="images/ai-assistant.webp" alt="Иллюстрация: ИИ-помощник на ноутбуке и смартфоне">
+            <span class="service-label">ИИ как помощник, а не как модное слово</span>
+          </div>
+          <div class="service-body">
+            <span class="service-num">04</span>
+            <h3>ИИ-помощники и цифровые ассистенты</h3>
+            <p>Помощники для консультаций, навигации по информации и типовых задач. Используем ИИ там, где он делает работу удобнее и понятнее для вас и клиента.</p>
+            <a href="#contact">Обсудить ИИ ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section darkband" id="process">
+    <div class="wrap">
+      <div class="section-heading">
+        <span class="eyebrow">Как мы работаем</span>
+        <h2>Без хаоса, перегруза и<br>непонятных технических слов.</h2>
+        <p>Клиенту важно понимать, что происходит. Поэтому двигаемся по понятным шагам: задача → решение → реализация → запуск.</p>
+      </div>
+      <div class="steps">
+        <article class="step">
+          <span class="step-num">01</span>
+          <h3>Слушаем и уточняем</h3>
+          <p>Разбираемся, что именно нужно вашему бизнесу: больше доверия, красивый сайт, бот для заявок или сокращение рутины.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">02</span>
+          <h3>Предлагаем рабочую схему</h3>
+          <p>Показываем, из каких блоков будет состоять решение, что реально сделать и что даст наилучший старт.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">03</span>
+          <h3>Создаём и помогаем запустить</h3>
+          <p>Собираем, тестируем и доводим до состояния, которое можно показать клиентам и использовать в работе.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="results">
+    <div class="wrap">
+      <div class="section-heading">
+        <span class="eyebrow">Решения для разных задач</span>
+        <h2>Посетитель должен не просто смотреть.<br>Он должен захотеть написать вам.</h2>
+        <p>Ниже — понятные сценарии, как digital-решения могут работать на бизнес. Это не выдуманные кейсы, а примеры направлений, с которыми можно стартовать.</p>
+      </div>
+      <div class="results-layout">
+        <div class="example-grid">
+          <article class="example">
+            <div class="example-media">
+              <img src="images/website.webp" alt="Иллюстрация: концепт сайта на ноутбуке">
+              <span class="example-tag">Для услуг и специалистов</span>
+            </div>
+            <div class="example-copy">
+              <h3>Сильная страница для заявок</h3>
+              <p>Человек быстро понимает, чем вы полезны, видит понятные преимущества и легко переходит к контакту.</p>
+            </div>
+          </article>
+          <article class="example">
+            <div class="example-media">
+              <img src="images/chatbot.webp" alt="Иллюстрация: чат-бот на смартфоне">
+              <span class="example-tag">Для магазина и переписок</span>
+            </div>
+            <div class="example-copy">
+              <h3>Каталог и диалог в мессенджере</h3>
+              <p>Клиент получает быстрый ответ, может посмотреть товары или услуги и легче остаётся в контакте с вами.</p>
+            </div>
+          </article>
+          <article class="example">
+            <div class="example-media">
+              <img src="images/shop-demo.webp" alt="Концепт онлайн-каталога для магазина на экране ноутбука">
+              <span class="example-tag">Для команды и процессов</span>
+            </div>
+            <div class="example-copy">
+              <h3>Больше порядка в работе</h3>
+              <p>Когда обращения, задачи и повторяющиеся процессы организованы лучше, легче масштабировать работу и не терять важное.</p>
+            </div>
+          </article>
+        </div>
+        <aside class="facts">
+          <h3>Что помогает продавать лучше</h3>
+          <div class="facts-list">
+            <div class="fact">
+              <div class="fact-icon">🎯</div>
+              <div><strong>Ясное позиционирование</strong><p>Клиент должен за 5–10 секунд понять, кто вы, что делаете и почему стоит написать именно вам.</p></div>
+            </div>
+            <div class="fact">
+              <div class="fact-icon">✨</div>
+              <div><strong>Визуал, который не стыдно показать</strong><p>Картинки, структура и акценты создают ощущение уровня, вкуса и внимания к деталям.</p></div>
+            </div>
+            <div class="fact">
+              <div class="fact-icon">📲</div>
+              <div><strong>Лёгкое действие</strong><p>Если связаться с вами можно в один-два клика, вероятность обращения становится выше.</p></div>
+            </div>
+            <div class="fact">
+              <div class="fact-icon">🤝</div>
+              <div><strong>Понятный следующий шаг</strong><p>На сайте должно быть очевидно, что делать дальше: написать, обсудить задачу, получить предложение.</p></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" style="padding-top:20px">
+    <div class="wrap faq">
+      <div>
+        <span class="eyebrow">FAQ</span>
+        <h2>Коротко о том,<br>что волнует почти каждого клиента.</h2>
+        <p style="margin-top:16px;color:var(--muted)">Если у вас пока только идея — это нормально. Для старта не нужно разбираться в разработке.</p>
+      </div>
+      <div class="faq-panel">
+        <details>
+          <summary>Можно обратиться, если пока есть только задумка?</summary>
+          <p>Да. Мы поможем превратить идею в понятный план: какой сайт или бот нужен, что стоит сделать первым и какие функции действительно важны.</p>
+        </details>
+        <details>
+          <summary>Сколько стоит разработка?</summary>
+          <p>Цена зависит от состава работ и функций. После обсуждения задачи можно определить разумный объём и предложить понятный вариант запуска.</p>
+        </details>
+        <details>
+          <summary>Будет ли сайт хорошо выглядеть на телефоне?</summary>
+          <p>Да, адаптация под мобильные устройства закладывается сразу, потому что значительная часть клиентов заходит именно со смартфона.</p>
+        </details>
+        <details>
+          <summary>Можно ли подключить существующие сервисы?</summary>
+          <p>Во многих случаях — да. Сначала проверяем доступы, ограничения платформ и наличие API, а затем предлагаем реалистичный путь интеграции.</p>
+        </details>
+        <details>
+          <summary>Можно начать с малого?</summary>
+          <p>Да. Часто лучше сначала запустить сильную базовую версию сайта или бота, а затем постепенно расширять функциональность.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact" style="padding-top:20px">
+    <div class="wrap">
+      <div class="cta">
+        <div>
+          <span class="eyebrow" style="color:#fff">Следующий шаг</span>
+          <h2>Если хотите, чтобы у клиента возникло желание заказать именно у вас — давайте начнём с правильной подачи.</h2>
+          <p>Опишите вашу задачу: нужен ли вам сайт, бот, каталог, автоматизация или ИИ-помощник. Обсудим, что лучше подойдёт именно вашему проекту.</p>
+          <div class="cta-actions">
+            <a class="button lime" href="https://t.me/nexusdigitalbots" target="_blank" rel="noopener noreferrer">Перейти в Telegram ↗</a>
+            <a class="button outline-light" href="https://max.ru/id503198822600_1_bot" target="_blank" rel="noopener noreferrer">Связаться через MAX-бота ↗</a>
+            <a class="button outline-light" href="mailto:kondirovv@yandex.ru?subject=Nexus%20Digital%20%E2%80%94%20%D0%BE%D0%B1%D1%81%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B0">Написать на почту ↗</a>
+          </div>
+        </div>
+        <div class="cta-box">
+          <strong style="font-size:18px">С чего можно начать:</strong>
+          <ul>
+            <li>сайт-визитка или продающий лендинг;</li>
+            <li>бот для заявок, записи или каталога;</li>
+            <li>автоматизация повторяющихся действий;</li>
+            <li>цифровой помощник под ваши задачи.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap footer">
+  <div class="footer-top">
+    <div>
+      <a class="brand" href="#top" style="font-size:17px"><span class="brand-mark">✳</span>NEXUS DIGITAL</a>
+      <div class="sources">Сайты • Боты • Автоматизация • ИИ</div>
+    </div>
+    <div class="footer-links">
+      <a href="#services">Услуги</a>
+      <a href="#results">Решения</a>
+      <a href="#process">Как работаем</a>
+      <a href="https://t.me/nexusdigitalbots" target="_blank" rel="noopener noreferrer">Telegram</a>
+      <a href="https://max.ru/id503198822600_1_bot" target="_blank" rel="noopener noreferrer">MAX-бот</a>
+      <a href="mailto:kondirovv@yandex.ru">kondirovv@yandex.ru</a>
     </div>
   </div>
-  <figure class="preview">
-    <figcaption>Nexus Digital Manager <span>Пример диалога в MAX</span></figcaption>
-    <p class="bubble">Выберите услугу и опишите задачу.</p>
-    <p class="bubble sent">Нужен сайт для цветочного магазина с каталогом и заявками.</p>
-    <p class="bubble confirmed">Заявка передана менеджеру Nexus Digital. Спасибо!</p>
-    <a class="preview-link" href="#cases">Как работает бот →</a>
-  </figure>
-</div>
-<section id="services" class="wrap"><h2>Что мы делаем</h2><p class="sub">От небольшой страницы до системы, которая помогает бизнесу обрабатывать обращения и экономить время.</p><div class="grid"><article class="card"><div class="symbol">🌐</div><h3>Сайты и лендинги</h3><p>Сайты-визитки, посадочные страницы, каталоги и адаптивный дизайн для смартфонов.</p></article><article class="card"><div class="symbol">🤖</div><h3>Боты в MAX и Telegram</h3><p>Боты для заявок, записи, ответов на вопросы, каталогов и клиентского сервиса.</p></article><article class="card"><div class="symbol">⚡</div><h3>Автоматизация</h3><p>Интеграции сервисов, уведомления, обработка заявок и уменьшение рутины.</p></article><article class="card"><div class="symbol">🧠</div><h3>ИИ-инструменты</h3><p>Помощники для текстов, обращений клиентов и внутренних рабочих процессов.</p></article><article class="card"><div class="symbol">📱</div><h3>Оформление сообществ</h3><p>Структура, дизайн и подготовка цифровых площадок бизнеса.</p></article><article class="card"><div class="symbol">🛠️</div><h3>Поддержка проектов</h3><p>Улучшение существующих решений, исправления и развитие функциональности.</p></article></div></section>
-<section id="cases" class="wrap">
-  <h2>Бот в MAX для приёма заявок</h2>
-  <p class="sub">Собственный проект Nexus Digital. Бот показывает услуги и передаёт обращения в рабочий канал менеджера.</p>
-  <div class="grid">
-    <article class="card"><h3>Клиент выбирает услугу</h3><p>В меню есть разработка сайтов и ботов, а также автоматизация бизнеса.</p></article>
-    <article class="card"><h3>Описывает задачу</h3><p>Бот просит указать задачу и желаемые сроки. Контакты можно добавить по желанию.</p></article>
-    <article class="card"><h3>Менеджер получает заявку</h3><p>Бот пересылает обращение в канал «Заявки Nexus Digital» и подтверждает отправку клиенту.</p></article>
+  <div class="sources">
+    Иллюстративные изображения созданы с помощью ИИ специально для оформления сайта. Это не фотографии сотрудников и не реальные клиентские проекты.<br>
+    © <span id="year">2026</span> Nexus Digital.
   </div>
-  <div class="actions"><a class="btn primary" href="https://max.ru/id503198822600_1_bot">Попробовать бота в MAX</a></div>
-</section>
-<section id="approach" class="wrap"><h2>Как строим работу</h2><p class="sub">Понятный процесс без лишней сложности.</p><div class="work"><article class="card"><span class="tag">01 · Разбираемся</span><h3>Изучаем вашу задачу</h3><p>Уточняем цель, аудиторию и то, что должно получиться в результате.</p></article><article class="card"><span class="tag">02 · Планируем</span><h3>Согласовываем решение</h3><p>Обсуждаем функциональность, этапы, стоимость и сроки до начала работы.</p></article><article class="card"><span class="tag">03 · Создаём</span><h3>Разрабатываем и проверяем</h3><p>Собираем рабочий продукт, тестируем основные сценарии.</p></article><article class="card"><span class="tag">04 · Запускаем</span><h3>Передаём результат</h3><p>Помогаем с публикацией и объясняем, как пользоваться решением.</p></article></div></section>
-<section class="wrap" id="contact"><div class="contact"><div class="eyebrow">Есть идея?</div><h2>Давайте обсудим ваш проект</h2><p>Напишите, что нужно сделать. Обсудим возможный формат работы.</p><p><a class="mail" href="mailto:kondirovv@yandex.ru">kondirovv@yandex.ru</a></p><div class="actions"><a class="btn primary" href="mailto:kondirovv@yandex.ru?subject=Запрос%20на%20разработку">Написать на почту</a><a class="btn secondary" href="https://max.ru/id503198822600_1_bot">Оставить заявку в MAX</a><a class="btn secondary" href="https://t.me/nexusdigitalbots">Написать в Telegram</a></div></div></section>
-</main><footer><div class="wrap"><span>© <span id="year">2026</span> Nexus Digital</span><span>Сайты · Боты · Автоматизация</span></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
-</body></html>
+</footer>
+
+<div class="mobile-cta"><a class="button primary" href="#contact">Хочу обсудить проект ↗</a></div>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
